@@ -1,0 +1,182 @@
+{
+ "line": [
+  {
+   "id": "VP-01",
+   "name": "Feet-supported hang",
+   "standard": "3 \u00d7 30 s, feet barely touching",
+   "altitude": 210,
+   "tier": "Foothills",
+   "clip": "ava_feet_supported_hang"
+  },
+  {
+   "id": "VP-02",
+   "name": "Dead hang",
+   "standard": "3 \u00d7 30 s (dream goal: 60 s)",
+   "altitude": 340,
+   "tier": "Foothills",
+   "clip": "leo_dead_hang"
+  },
+  {
+   "id": "VP-03",
+   "name": "Active hang",
+   "standard": "3 \u00d7 20\u201330 s active",
+   "altitude": 550,
+   "tier": "Foothills",
+   "clip": "ava_active_hang"
+  },
+  {
+   "id": "VP-04",
+   "name": "Scapular pull-ups",
+   "standard": "3 \u00d7 10 with a 1 s pause",
+   "altitude": 690,
+   "tier": "Foothills",
+   "clip": "leo_scap_pullup"
+  },
+  {
+   "id": "VP-06",
+   "name": "Flexed-arm hang",
+   "standard": "3 \u00d7 20 s at the top + 3 \u00d7 10 s at 90\u00b0",
+   "altitude": 1800,
+   "tier": "Highlands",
+   "clip": "ava_flexed_arm_hang"
+  },
+  {
+   "id": "VP-07",
+   "name": "Negative pull-ups",
+   "standard": "3 \u00d7 5, lowering in 5 s",
+   "altitude": 2190,
+   "tier": "Highlands",
+   "clip": "leo_negative_pullup"
+  },
+  {
+   "id": "VP-08",
+   "name": "Assisted pull-ups",
+   "standard": "3 \u00d7 8 with minimal help",
+   "altitude": 2160,
+   "tier": "Highlands",
+   "clip": "ava_assisted_pullup"
+  },
+  {
+   "id": "VP-09",
+   "name": "Jump-start and partial pull-ups",
+   "standard": "3 \u00d7 5 with a small jump + 3 \u00d7 3 bottom half",
+   "altitude": 2590,
+   "tier": "Highlands",
+   "clip": "leo_jump_pullup"
+  },
+  {
+   "id": "VP-10",
+   "name": "First pull-up",
+   "standard": "1 strict rep on 2 different days",
+   "altitude": 2770,
+   "tier": "Highlands",
+   "clip": "ava_pull_up"
+  },
+  {
+   "id": "VP-13",
+   "name": "Grips & reps",
+   "standard": "3 \u00d7 8 strict (max about 10\u201312)",
+   "altitude": 4360,
+   "tier": "High Ridges",
+   "clip": "leo_pull_up"
+  },
+  {
+   "id": "VP-17",
+   "name": "L-sit pull-ups",
+   "standard": "3 \u00d7 5",
+   "altitude": 5070,
+   "tier": "High Ridges",
+   "clip": "ava_lsit_pullup"
+  },
+  {
+   "id": "VP-18",
+   "name": "Archer pull-ups",
+   "standard": "3 \u00d7 3 per side",
+   "altitude": 5710,
+   "tier": "High Ridges",
+   "clip": "leo_archer_pullup"
+  },
+  {
+   "id": "VP-19",
+   "name": "One-arm pull-up",
+   "standard": "1 strict rep per side",
+   "altitude": 6540,
+   "tier": "The Heights",
+   "clip": "ava_one_arm_pullup"
+  }
+ ],
+ "starts": {
+  "VP-01": {
+   "id": "VP-01",
+   "name": "Feet-supported hang",
+   "standard": "3 \u00d7 30 s, feet barely touching",
+   "altitude": 210,
+   "tier": "Foothills",
+   "clip": "ava_feet_supported_hang"
+  },
+  "VP-02": {
+   "id": "VP-02",
+   "name": "Dead hang",
+   "standard": "3 \u00d7 30 s (dream goal: 60 s)",
+   "altitude": 340,
+   "tier": "Foothills",
+   "clip": "leo_dead_hang"
+  },
+  "VP-04": {
+   "id": "VP-04",
+   "name": "Scapular pull-ups",
+   "standard": "3 \u00d7 10 with a 1 s pause",
+   "altitude": 690,
+   "tier": "Foothills",
+   "clip": "leo_scap_pullup"
+  },
+  "VP-06": {
+   "id": "VP-06",
+   "name": "Flexed-arm hang",
+   "standard": "3 \u00d7 20 s at the top + 3 \u00d7 10 s at 90\u00b0",
+   "altitude": 1800,
+   "tier": "Highlands",
+   "clip": "ava_flexed_arm_hang"
+  },
+  "VP-07": {
+   "id": "VP-07",
+   "name": "Negative pull-ups",
+   "standard": "3 \u00d7 5, lowering in 5 s",
+   "altitude": 2190,
+   "tier": "Highlands",
+   "clip": "leo_negative_pullup"
+  },
+  "VP-11": {
+   "id": "VP-11",
+   "name": "Singles and clusters",
+   "standard": "3 \u00d7 3 strict",
+   "altitude": 3320,
+   "tier": "High Ridges",
+   "clip": "ava_pull_up"
+  },
+  "VP-12": {
+   "id": "VP-12",
+   "name": "Ascending ladders",
+   "standard": "3 \u00d7 5 strict (max about 8)",
+   "altitude": 3640,
+   "tier": "High Ridges",
+   "clip": "leo_pull_up"
+  },
+  "VP-13": {
+   "id": "VP-13",
+   "name": "Grips & reps",
+   "standard": "3 \u00d7 8 strict (max about 10\u201312)",
+   "altitude": 4360,
+   "tier": "High Ridges",
+   "clip": "leo_pull_up"
+  },
+  "VP-14": {
+   "id": "VP-14",
+   "name": "Pull-up endurance",
+   "standard": "Max 15+ strict (or your own goal)",
+   "altitude": 4610,
+   "tier": "High Ridges",
+   "clip": "ava_pull_up"
+  }
+ }
+}

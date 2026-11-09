@@ -2,51 +2,405 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bodyclimb: Calisthenics Coach</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bodyclimb: Calisthenics Coach | Your first pull-up, step by step</title>
+<meta name="description" content="Can't do a single pull-up yet? Bodyclimb starts at your level, down to a hang with your feet on the floor, and climbs with you rep by rep to your first strict pull-up and beyond. Six directions, 3D demos from two angles, a plan that adapts. Free to start, no account, no ads.">
+<meta name="apple-itunes-app" content="app-id=6825797176">
+<meta name="theme-color" content="#16121D">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bodyclimb.app/">
+<meta property="og:title" content="Bodyclimb: Every rep is altitude.">
+<meta property="og:description" content="From zero to your first strict pull-up and beyond. A calisthenics coach for iPhone that starts where you are.">
+<meta property="og:image" content="https://bodyclimb.app/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/icon.png">
-<style>
-:root { --bg:#FBF5EC; --surface:#FFFFFF; --line:#E6D9C6; --ink:#2A2433; --ink2:#645C6E; --accent:#BF3D19;
-        --sky:linear-gradient(180deg,#F7C9A1 0%,#F3A88C 55%,#FCE4C6 100%); color-scheme: light dark; }
-@media (prefers-color-scheme: dark) {
-  :root { --bg:#1B1722; --surface:#26202E; --line:#322A3C; --ink:#F8F1E9; --ink2:#C4BACD; --accent:#FF7A4D;
-          --sky:linear-gradient(180deg,#3A2A44 0%,#2A2234 60%,#1B1722 100%); }
-}
-* { box-sizing: border-box; }
-body { margin:0; background:var(--bg); color:var(--ink);
-       font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
-header { background:var(--sky); padding:48px 16px 40px; }
-.wrap { max-width:680px; margin:0 auto; padding:0 16px; }
-header .wrap { padding:0; }
-.brand { display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--ink); }
-.brand img { width:44px; height:44px; border-radius:10px; }
-.brand span { font: 800 22px/1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; }
-h1 { font: 800 34px/1.15 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; margin:28px 0 8px; }
-h2 { font: 700 20px/1.3 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; margin:32px 0 6px; }
-p, li { margin:0 0 12px; }
-.lede { font-size:19px; color:var(--ink2); margin:0; }
-.updated { color:var(--ink2); font-size:15px; margin-top:28px; }
-a { color:var(--accent); }
-nav { display:flex; flex-wrap:wrap; gap:8px 20px; margin:36px 0 48px; padding-top:20px; border-top:1px solid var(--line); }
-nav a { font-weight:600; text-decoration:none; }
-.card { background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin:24px 0; }
-</style>
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="preload" href="/nunito.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/landing.css?v=2ed6ea3bec">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Bodyclimb: Calisthenics Coach","operatingSystem":"iOS","applicationCategory":"HealthApplication","url":"https://bodyclimb.app/","installUrl":"https://apps.apple.com/app/id6825797176","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"A calisthenics coach for iPhone that starts below zero and climbs with you to your first strict pull-up and beyond."}
+</script>
 </head>
 <body>
-<header><div class="wrap">
-<a class="brand" href="/"><img src="/icon.png" alt=""><span>Bodyclimb</span></a>
-<h1>From zero to athletic.</h1>
-<p class="lede">Bodyclimb: Calisthenics Coach for iPhone.</p>
-</div></header>
-<main class="wrap">
+<a class="skip" href="#climb">Skip to the climb</a>
 
-<p>Never done a pull-up? Bodyclimb starts from a feet-supported hang and maps your whole way from zero to athletic:
-six sides of your body, one island, and every light is something you can really do.</p>
-<p>Six directions — back, arms, chest, shoulders, legs and core — with exercises shown from two angles by original 3D
-characters, a plan that adapts to your answers, gear and time, and honest progress: ranges, never promises.</p>
-<p>No account. No ads. No tracking. For iPhone, ages 16 and up.</p>
+<header class="nav" id="nav">
+  <a class="brand" href="/" aria-label="Bodyclimb home"><img src="/icon.png" alt="" width="34" height="34"><span>Bodyclimb</span></a>
+  <nav aria-label="Sections">
+    <a href="#climb">The climb</a>
+    <a href="#start">Your start</a>
+    <a href="#how">How it works</a>
+    <a href="#directions">Six directions</a>
+    <a href="#price">Price</a>
+  </nav>
+  <a class="nav-cta" href="https://apps.apple.com/app/apple-store/id6825797176?pt=128315061&amp;ct=web-home&amp;mt=8" data-cta="nav">Get the app</a>
+</header>
 
-<nav><a href="/support">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a></nav>
+<!-- Altimeter: altitude follows the scroll; the page's places carry data-alt -->
+<aside class="alti" aria-hidden="true">
+  <div class="alti-rail"><div class="alti-fill"></div></div>
+  <div class="alti-read"><b class="alti-m">0</b><span class="alti-u">m</span><em class="alti-tier">Dawnhaven</em></div>
+</aside>
+
+<main>
+
+<!-- ============ HERO: before sunrise, 0 m ============ -->
+<section class="hero">
+  <div class="hero-sky" aria-hidden="true">
+    <div class="stars"></div>
+    <img class="hero-plate" src="/plate-welcome.jpg" alt="" width="1000" height="2000" fetchpriority="high">
+    <div class="hero-veil"></div>
+    <div class="hero-sun"></div>
+  </div>
+  <div class="hero-in">
+    <div class="hero-copy">
+      <h1 class="hero-h"><span class="line">Can’t do a single</span> <span class="line">pull-up yet?</span></h1>
+      <p class="hero-good">Good. That’s exactly where this climb starts.</p>
+      <p class="hero-sub">Bodyclimb is a calisthenics coach for iPhone. Day one starts at your level, down to a hang with your feet still on the floor. From there it climbs with you, rep by rep, to your first strict pull-up and on to the moves you’ve only seen in videos.</p>
+      <div class="cta-row">
+        <a class="badge" href="https://apps.apple.com/app/apple-store/id6825797176?pt=128315061&amp;ct=web-home&amp;mt=8" data-cta="hero"><img src="/appstore-badge.svg" alt="Download on the App Store" width="180" height="60"></a>
+        <a class="link-quiet" href="#start">Find your first step <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+      </div>
+      <ul class="trust">
+        <li>Free to start</li><li>No account</li><li>No ads</li><li>Works offline</li>
+      </ul>
+    </div>
+    <figure class="hero-phone">
+      <div class="phone">
+        <div class="phone-screen">
+          <img src="/screen-player_hang.webp" alt="The Bodyclimb workout player: Active hang, 2 × 15 s, with three coaching cues and a Start button" width="660" height="1434">
+          <div class="live-demo">
+            <video src="/clip-ava_active_hang.mp4" poster="/clip-ava_active_hang.jpg" muted loop playsinline autoplay preload="auto" aria-hidden="true"></video>
+            <span class="pill pill-side">Side</span><span class="pill pill-back">Back</span>
+          </div>
+          <div class="island" aria-hidden="true"></div>
+        </div>
+      </div>
+      <figcaption>The real workout player. Every move loops from the side and from behind while you train.</figcaption>
+    </figure>
+  </div>
+  <a class="scroll-cue" href="#truth" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ============ PAIN: still dark, honest ============ -->
+<section class="truth" id="truth">
+  <div class="wrap">
+    <h2 class="truth-h">You’re not weak.<br>You were handed the wrong first step.</h2>
+    <ol class="truth-list">
+      <li><span>Most programs</span> open with “3 × 8 pull-ups”, as if that were the easy part.</li>
+      <li><span>You jump up,</span> hang for a few seconds, drop, and close the video.</li>
+      <li><span>Nobody says</span> what to do today, at your level, with the gear you actually have.</li>
+    </ol>
+    <p class="truth-turn">Bodyclimb gives you the step <em>before</em> that. The one you can do tonight. Then the next one.</p>
+  </div>
+</section>
+
+<!-- ============ THE CLIMB: signature, sticky demo + elevation ============ -->
+<section class="climb" id="climb">
+  <div class="wrap climb-head">
+    <h2>Your first pull-up stands at <span class="num">2,770 m</span>.<br>Here are the main steps of the trail.</h2>
+    <p>This is the real pull-up line from the app’s map. Each step has a standard you can check, and a 3D demo from two angles. Scroll to climb it.</p>
+  </div>
+  <div class="climb-body">
+    <div class="climb-stage">
+      <div class="stage-card">
+        <div class="stage-top">
+          <span class="stage-alt"><b class="num" data-stage-alt>210</b> m</span>
+          <span class="stage-tier" data-stage-tier>Foothills</span>
+        </div>
+        <div class="stage-video">
+          <video data-stage-video muted loop playsinline preload="auto" aria-hidden="true"></video>
+        </div>
+        <div class="stage-name" data-stage-name>Feet-supported hang</div>
+        <div class="stage-std" data-stage-std>3 × 30 s, feet barely touching</div>
+        <svg class="profile" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="pf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3A88C" stop-opacity=".55"/><stop offset="1" stop-color="#F3A88C" stop-opacity="0"/></linearGradient>
+          </defs>
+          <path class="profile-area" d=""/>
+          <path class="profile-line" d=""/>
+          <path class="profile-done" d=""/>
+          <circle class="profile-dot" r="5" cx="0" cy="0"/>
+        </svg>
+      </div>
+    </div>
+    <ol class="steps" data-steps>
+      <!-- filled from climb.json (atlas.json) by landing.js; this fallback keeps the page readable without script -->
+      <li class="step"><b>210 m</b> Feet-supported hang</li>
+      <li class="step"><b>2,770 m</b> First pull-up</li>
+      <li class="step"><b>6,540 m</b> One-arm pull-up</li>
+    </ol>
+  </div>
+  <div class="wrap climb-foot">
+    <p><strong>Times are ranges, never promises.</strong> Most adults need months, not days, to reach the first pull-up, and that’s fine: a step you have reached stays reached, and a hard day says “Not yet”, never “Failed”.</p>
+  </div>
+</section>
+
+<!-- ============ YOUR START: the app's own level questions ============ -->
+<section class="start" id="start">
+  <div class="wrap start-grid">
+    <div class="start-copy">
+      <h2>Where would your climb start?</h2>
+      <p>Three questions, the same ones the app asks for Strong back, read by the same table. No bar needed. Answer from the sofa.</p>
+      <p class="fine">The app asks a little more and checks you in the first workouts, so treat this as a first look.</p>
+    </div>
+    <div class="quiz" data-quiz aria-live="polite">
+      <div class="q is-on" data-q="pullups">
+        <p class="q-h">How many strict pull-ups can you do in a row?</p>
+        <p class="q-hint">From a full hang to chin over the bar, no swing. Count the ones you are sure of.</p>
+        <div class="q-opts">
+          <button type="button" data-a="0">None yet</button>
+          <button type="button" data-a="1">1–3</button>
+          <button type="button" data-a="4">4–7</button>
+          <button type="button" data-a="8">8–11</button>
+          <button type="button" data-a="12">12 or more</button>
+        </div>
+      </div>
+      <div class="q" data-q="fah">
+        <p class="q-h">How long can you hold your chin over the bar?</p>
+        <p class="q-hint">Step up from a chair, then hold the top with bent arms.</p>
+        <div class="q-opts">
+          <button type="button" data-a="0">Not yet</button>
+          <button type="button" data-a="5">5–19 s</button>
+          <button type="button" data-a="20">20 s or more</button>
+        </div>
+      </div>
+      <div class="q" data-q="hang">
+        <p class="q-h">How long can you hang from a bar?</p>
+        <p class="q-hint">Straight arms, full grip, feet off the floor.</p>
+        <div class="q-opts">
+          <button type="button" data-a="0">Under 10 s, or never tried</button>
+          <button type="button" data-a="10">10–29 s</button>
+          <button type="button" data-a="30">30 s or more</button>
+        </div>
+      </div>
+      <div class="q q-result" data-q="result">
+        <div class="res-video"><video data-res-video muted loop playsinline aria-hidden="true"></video></div>
+        <div class="res-copy">
+          <p class="res-k">You’d start at</p>
+          <p class="res-name" data-res-name>Dead hang</p>
+          <p class="res-alt"><b class="num" data-res-alt>340</b> m · <span data-res-std>3 × 30 s</span></p>
+          <p class="res-next" data-res-next></p>
+          <div class="res-actions">
+            <a class="badge badge-sm" href="https://apps.apple.com/app/apple-store/id6825797176?pt=128315061&amp;ct=web-quiz&amp;mt=8" data-cta="quiz"><img src="/appstore-badge.svg" alt="Download on the App Store" width="150" height="50"></a>
+            <button type="button" class="link-quiet" data-restart>Answer again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS: sticky phone, four beats ============ -->
+<section class="how" id="how">
+  <div class="wrap">
+    <h2 class="how-h">Twenty minutes, a bar, and one tap a set.</h2>
+  </div>
+  <div class="how-body">
+    <div class="how-phone">
+      <div class="phone phone-sm">
+        <div class="phone-screen">
+          <img data-how-img src="/screen-level_question.webp" alt="" width="660" height="1434">
+          <div class="island" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+    <ol class="beats">
+      <li class="beat is-on" data-shot="level_question" data-alt-shot="A level question in the app: how long can you hang from a bar?">
+        <div class="beat-shot phone phone-xs"><div class="phone-screen"><img src="/screen-level_question.webp" alt="A level question in the app: how long can you hang from a bar?" loading="lazy" width="660" height="1434"><div class="island" aria-hidden="true"></div></div></div>
+        <h3>Tell it where you are.</h3>
+        <p>A few questions set your level in each direction, no test needed. Want proof instead? Take the level test.</p>
+      </li>
+      <li class="beat" data-shot="today" data-alt-shot="Today in the app: the day's workout on its place on the island">
+        <div class="beat-shot phone phone-xs"><div class="phone-screen"><img src="/screen-today.webp" alt="Today in the app: the day's workout on its place on the island" loading="lazy" width="660" height="1434"><div class="island" aria-hidden="true"></div></div></div>
+        <h3>Get today’s workout.</h3>
+        <p>It fits your gear, your training days and the time you have, from 15 minutes to an hour. Several directions train together in one workout.</p>
+      </li>
+      <li class="beat" data-shot="rest" data-alt-shot="The rest screen: how many more reps could you have done?">
+        <div class="beat-shot phone phone-xs"><div class="phone-screen"><img src="/screen-rest.webp" alt="The rest screen: how many more reps could you have done?" loading="lazy" width="660" height="1434"><div class="island" aria-hidden="true"></div></div></div>
+        <h3>One tap a set.</h3>
+        <p>After each set, say how many more you could have done. That’s it. The next workout follows your answers, and rest is set by the exercise.</p>
+      </li>
+      <li class="beat" data-shot="howto" data-alt-shot="The coach's guide for an exercise: get set, do it, what to feel">
+        <div class="beat-shot phone phone-xs"><div class="phone-screen"><img src="/screen-howto.webp" alt="The coach's guide for an exercise: get set, do it, what to feel" loading="lazy" width="660" height="1434"><div class="island" aria-hidden="true"></div></div></div>
+        <h3>Never guess the form.</h3>
+        <p>Tap “How to” for the coach’s guide: how to get set, what to feel, common mistakes, an easier way, and when to stop.</p>
+      </li>
+      <li class="beat" data-shot="progress" data-alt-shot="Progress: how far each direction has climbed, in metres">
+        <div class="beat-shot phone phone-xs"><div class="phone-screen"><img src="/screen-progress.webp" alt="Progress: how far each direction has climbed, in metres" loading="lazy" width="660" height="1434"><div class="island" aria-hidden="true"></div></div></div>
+        <h3>Watch the island light up.</h3>
+        <p>Every step you master lights a place on the Isle of First Light, and your altitude rises with every clean rep.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ USE CASES: a day of training ============ -->
+<section class="day" id="day">
+  <div class="wrap">
+    <h2>It fits the day you already have.</h2>
+    <p class="lede">No gym membership, no hour to spare. A doorway, a park, a towel. The plan bends to what’s around you.</p>
+  </div>
+  <div class="day-grid">
+    <figure class="moment ai m-tall">
+      <img src="/photo-home-doorway.jpg" alt="A woman hangs from a doorway pull-up bar at sunrise, feet still touching the floor, her phone leaning against the wall" loading="lazy" width="1024" height="1536">
+      <figcaption><time>6:40</time><b>Bedroom door.</b> A doorway bar is enough. Day one is a hang with your feet still on the floor.</figcaption>
+    </figure>
+    <figure class="moment ai m-wide">
+      <img src="/photo-tap-floor.jpg" alt="A chalked hand taps a phone lying on a gym floor between sets" loading="lazy" width="1536" height="1024">
+      <figcaption><time>12:30</time><b>Between sets.</b> The phone lives on the floor. Big numbers, beeps and vibration read from two metres, one tap to log.</figcaption>
+    </figure>
+    <figure class="moment ai m-wide">
+      <img src="/photo-park-dawn.jpg" alt="A woman sits on a bench at an outdoor pull-up park at sunrise, looking at her phone" loading="lazy" width="1536" height="1024">
+      <figcaption><time>18:50</time><b>The park.</b> Every move loops from two angles while you rest, so the next set starts right.</figcaption>
+    </figure>
+    <figure class="moment ai m-wide">
+      <img src="/photo-evening-rest.jpg" alt="A woman rests on the living-room floor in the evening, a rest timer glowing on her phone" loading="lazy" width="1536" height="1024">
+      <figcaption><time>21:10</time><b>Living room.</b> The rest timer sits on your Lock Screen and in the Dynamic Island. Feeling off? “Unwell” stops the workout at once.</figcaption>
+    </figure>
+  </div>
+  <p class="wrap fine ai-note">The people in these photos are not real users. Each scene is an AI-generated illustration of how the app is used. The exercise demos are Bodyclimb’s own 3D animation.</p>
+</section>
+
+<!-- ============ SIX DIRECTIONS on the island ============ -->
+<section class="dirs" id="directions">
+  <div class="wrap">
+    <h2>Six directions. One island.</h2>
+    <p class="lede">The pull-up is the mountain in the middle. Around it, every side of your body has its own line, from the first easy step to the move people stop to watch. Train one, or several together.</p>
+  </div>
+  <div class="isle">
+    <img class="isle-map" src="/island-dawn.jpg" alt="The Isle of First Light: an illustrated island at dawn with mountains, forests and lakes" loading="lazy" width="2200" height="2200">
+    <ul class="dir-list">
+      <li class="dir" style="--c:#C9622F"><img src="/clip-ava_pull_up.jpg" alt="" loading="lazy"><div><h3>Strong back</h3><p>Feet-supported hang → one-arm pull-up</p></div></li>
+      <li class="dir" style="--c:#2F8A5E"><img src="/clip-ava_dips.jpg" alt="" loading="lazy"><div><h3>Strong chest</h3><p>Wall push-ups → dips and the one-arm push-up</p></div></li>
+      <li class="dir" style="--c:#2F7FB3"><img src="/clip-leo_pistol_squat.jpg" alt="" loading="lazy"><div><h3>Strong legs</h3><p>Sit-to-stands → the pistol squat</p></div></li>
+      <li class="dir" style="--c:#C98A0E"><img src="/clip-leo_lsit.jpg" alt="" loading="lazy"><div><h3>Strong core</h3><p>Dead bugs → the L-sit</p></div></li>
+      <li class="dir" style="--c:#8E5BB5"><img src="/clip-ava_handstand.jpg" alt="" loading="lazy"><div><h3>Strong shoulders</h3><p>Planks and the wall → the handstand</p></div></li>
+      <li class="dir" style="--c:#BF3D19"><img src="/clip-leo_muscle_up.jpg" alt="" loading="lazy"><div><h3>Strong arms</h3><p>Grip and hangs → the muscle-up</p></div></li>
+    </ul>
+  </div>
+  <div class="wrap dtabs" data-dtabs>
+    <div class="chips" role="tablist" aria-label="Directions">
+      <button role="tab" type="button" aria-selected="true" data-from="ava_feet_supported_hang" data-to="leo_muscle_up" data-fromname="Feet-supported hang" data-toname="Muscle-up">Back &amp; arms</button>
+      <button role="tab" type="button" aria-selected="false" data-from="leo_wall_pushup" data-to="ava_dips" data-fromname="Wall push-up" data-toname="Dips">Chest</button>
+      <button role="tab" type="button" aria-selected="false" data-from="ava_sit_to_stand" data-to="leo_pistol_squat" data-fromname="Sit-to-stand" data-toname="Pistol squat">Legs</button>
+      <button role="tab" type="button" aria-selected="false" data-from="ava_dead_bug" data-to="leo_lsit" data-fromname="Dead bug" data-toname="L-sit">Core</button>
+      <button role="tab" type="button" aria-selected="false" data-from="leo_wall_handstand" data-to="ava_handstand" data-fromname="Wall handstand" data-toname="Handstand">Shoulders</button>
+    </div>
+    <div class="dpair" role="tabpanel">
+      <figure class="pair"><video data-pair="from" src="/clip-ava_feet_supported_hang.mp4" poster="/clip-ava_feet_supported_hang.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><figcaption><span>Day one</span> <b data-pairname="from">Feet-supported hang</b></figcaption></figure>
+      <span class="pair-arrow" aria-hidden="true"><svg viewBox="0 0 40 16"><path d="M2 8h34M30 2l6 6-6 6"/></svg></span>
+      <figure class="pair"><video data-pair="to" src="/clip-leo_muscle_up.mp4" poster="/clip-leo_muscle_up.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><figcaption><span>Up the line</span> <b data-pairname="to">Muscle-up</b></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IT LISTENS: adapts + honest ============ -->
+<section class="listens">
+  <div class="wrap listens-grid">
+    <div class="listens-copy">
+      <h2>A coach that listens before it pushes.</h2>
+      <dl class="facts">
+        <div><dt>Too easy, too hard?</dt><dd>Bodyclimb notices, and asks before it changes anything.</dd></div>
+        <div><dt>Something hurts?</dt><dd>Say so, and that area gets rest. “Unwell” stops the workout at once.</dd></div>
+        <div><dt>Holds count.</dt><dd>A countdown with beeps and vibration, or type the seconds yourself.</dd></div>
+        <div><dt>Every light is earned.</dt><dd>Achievements are built only from what you actually did. A step you reached stays reached.</dd></div>
+      </dl>
+    </div>
+    <figure class="listens-phone">
+      <div class="phone phone-sm">
+        <div class="phone-screen">
+          <img src="/screen-achievements.webp" alt="The achievements wall: medals earned from real workouts" loading="lazy" width="660" height="1434">
+          <div class="island" aria-hidden="true"></div>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap faq-in">
+    <h2>Before you hang on</h2>
+    <details><summary>I can’t do a single pull-up. Is this really for me?</summary><p>It was built for you. The pull-up line starts with a hang where your feet still touch the floor, and the first workouts are short.</p></details>
+    <details><summary>Do I need a gym?</summary><p>No. A doorway bar or a park bar covers the pull line; chest, legs and core need only the floor, a wall, a chair or a table. Tell the app what you have and the workout is built from it. No bar today? A towel shut in a sturdy door is a row.</p></details>
+    <details><summary>How long until my first pull-up?</summary><p>Honestly, it depends on where you start, and for most adults it is months, not days. The app shows a range for your next step, never a promise, and narrows it as it learns how you train.</p></details>
+    <details><summary>How long is a workout?</summary><p>You choose: from about 15 minutes to an hour, on the days you pick. Several directions can train together in one workout.</p></details>
+    <details><summary>What if something hurts?</summary><p>Say so during the workout and that area gets rest; “Unwell” stops the workout at once. Bodyclimb is a training plan, not medical advice: if a doctor has told you to be careful with exercise, ask them first.</p></details>
+    <details><summary>What happens to my data?</summary><p>Your workouts stay on your iPhone. No account, no ads, no tracking, and the app works offline. This website sets no cookies either.</p></details>
+  </div>
+</section>
+
+<!-- ============ PRICE ============ -->
+<section class="price" id="price">
+  <div class="wrap">
+    <h2>Start free. Buy once. No ads.</h2>
+    <p class="lede">The full plan is free until your first new light: six to twelve workouts. After that your level in every direction stays free, for good.</p>
+    <div class="tiers">
+      <div class="tier">
+        <h3>Free</h3>
+        <p class="tier-p"><span class="num">$0</span></p>
+        <ul>
+          <li>The full plan until your first new light</li>
+          <li>Then your level in every direction, forever</li>
+          <li>Level checks, challenges, the Dead Hang Test</li>
+          <li>Rest-day mobility and the whole map</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <h3>One direction</h3>
+        <p class="tier-p"><span class="num">$14.99</span> once</p>
+        <ul>
+          <li>Every step above your level in that direction</li>
+          <li>Pay once, yours forever</li>
+        </ul>
+      </div>
+      <div class="tier tier-full">
+        <h3>Bodyclimb Full</h3>
+        <p class="tier-p"><span class="num">$39.99</span> a year</p>
+        <p class="tier-note">First month free for new subscribers, then <span class="num">$39.99</span> a year until you cancel · or <span class="num">$59.99</span> once, forever</p>
+        <ul>
+          <li>All six directions, every step</li>
+          <li>Every new path as it opens</li>
+        </ul>
+      </div>
+    </div>
+    <ul class="privacy">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M3 3l18 18"/></svg>No account</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 3l18 18"/></svg>No ads</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>No tracking. Your workouts stay on your iPhone.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SUMMIT: final call ============ -->
+<section class="summit">
+  <img class="summit-bg" src="/plate-welcome-lg.jpg" alt="" loading="lazy" width="1024" height="2048">
+  <div class="summit-in">
+    <p class="summit-alt"><span class="num">2,770 m</span> to your first pull-up.</p>
+    <h2>The first step is a hang with your feet on the floor.</h2>
+    <p>Answer a few questions from the sofa, and the app puts you on the map where you are today.</p>
+    <a class="badge badge-lg" href="https://apps.apple.com/app/apple-store/id6825797176?pt=128315061&amp;ct=web-home&amp;mt=8" data-cta="summit"><img src="/appstore-badge.svg" alt="Download on the App Store" width="210" height="70"></a>
+    <p class="summit-fine">For iPhone · Ages 16+ · Free to start</p>
+  </div>
+</section>
+
 </main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="/"><img src="/icon.png" alt="" width="28" height="28"><span>Bodyclimb</span></a>
+    <nav aria-label="Legal and help"><a href="/support">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a></nav>
+    <p>Bodyclimb is a training plan, not medical advice. If a doctor has told you to be careful with exercise, ask them before you train. © 2026 Dmytro Nour.</p>
+  </div>
+</footer>
+
+<a class="qr-card" href="https://apps.apple.com/app/apple-store/id6825797176?pt=128315061&amp;ct=web-qr&amp;mt=8" data-cta="qr" aria-label="Open Bodyclimb in the App Store"><img src="/qr.svg" alt="" width="84" height="84"><span><b>On your iPhone?</b>Scan to start Day 1</span></a>
+
+<div class="sticky-cta" aria-hidden="true">
+  <a href="https://apps.apple.com/app/apple-store/id6825797176?pt=128315061&amp;ct=web-home&amp;mt=8" data-cta="sticky" tabindex="-1"><img src="/icon.png" alt="" width="32" height="32"><span><b>Bodyclimb</b> Free to start</span><em>Get</em></a>
+</div>
+
+<script src="/landing.js?v=06a7e9033f" defer></script>
 </body>
 </html>
