@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6825797176">
 <title>Privacy Policy · Bodyclimb</title>
 <link rel="icon" href="/icon.png">
 <style>
@@ -30,6 +31,8 @@ a { color:var(--accent); }
 nav { display:flex; flex-wrap:wrap; gap:8px 20px; margin:36px 0 48px; padding-top:20px; border-top:1px solid var(--line); }
 nav a { font-weight:600; text-decoration:none; }
 .card { background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin:24px 0; }
+.store { display:inline-block; margin:8px 0 24px; padding:14px 22px; border-radius:14px; background:var(--ink);
+         color:var(--bg); font-weight:700; text-decoration:none; }
 </style>
 </head>
 <body>
@@ -40,28 +43,40 @@ nav a { font-weight:600; text-decoration:none; }
 </div></header>
 <main class="wrap">
 <h2>In short</h2>
-<p>Bodyclimb has no account and no sign-in. What you enter stays on this phone. The app sends nothing about you anywhere: no analytics, no ads, no tracking, no third parties.</p>
+<p>Bodyclimb has no account and no sign-in. What you enter stays on this phone. There is one exception, and it is your choice: if your version of the app has the coach chat (its answers are written by an AI model) and you turn it on, each question you ask it is sent off the phone with a short summary of your training, to get the answer, along with the few details our server needs to set your daily limit. “Your coach” below says exactly what is sent and who receives it. Apart from that the app sends nothing: no analytics, no ads, no tracking.</p>
 <h2>What the app keeps, on this phone</h2>
 <p>Your answers (birth year, the health check, your gear, the days you train), your workouts and the settings you choose. The plan is worked out on the phone from them.</p>
 <h2>Health answers</h2>
-<p>The health check and pain notes are kept apart from your workouts, in storage the phone protects while it is locked, and are left out of the phone’s backups. They are never shared.</p>
+<p>The health check and pain notes are kept apart from your workouts, in storage the phone protects while it is locked, and are left out of the phone’s backups. They are never shared, and they are never part of what the coach chat is sent.</p>
+<h2>Camera, voice and music</h2>
+<p>If you turn on the camera in a workout, it counts your reps and times your holds. The picture is read on this phone, in memory, and is never stored or sent; only the counts and times are kept, with your workouts. The coach’s voice and the workout music are sound files inside the app. The app does not use the microphone.</p>
+<h2>Your coach</h2>
+<p>Some versions of the app have a coach chat, “Your coach”, whose answers are written by an AI model. It is optional, it is for people aged 18 or over, and it stays off until you agree on its own screen. Each time you ask it something, the app sends your question, the earlier lines of the same chat, today’s plan and the reasons for its exercises, the coach’s written guides for those exercises, and a summary of your training: what you train, how many workouts you have done, the exercises, sets and your best and latest results of the last four weeks, your gear and the workout length you chose. It does not send your health check or pain notes, your age, height or weight, or the camera’s picture. The app holds no name or email of yours. You can turn it off again from the menu on its screen; after that nothing more is sent.</p>
+<h2>Pain and health questions</h2>
+<p>Before a question leaves the phone, the app checks it for words about pain, injury, illness, medicine or food, in English, German, French and Spanish. A question with such a word is not sent, and the app shows its own care steps instead. This is a list of words, so it can miss a question worded another way. Please keep health details out of what you type to the coach.</p>
+<h2>Who receives your question</h2>
+<p>It goes to Bodyclimb’s own server, which runs on Cloudflare, and from there to Anthropic, the company whose AI model writes the answer. Both work for us, to provide this service only, under their data processing terms, and may process it in the United States or other countries. Our server passes the question on and does not store or log it, the summary or the answer. Under its commercial terms, Anthropic may not train its models on them. It deletes them after the time its published policy sets (30 days when we checked, in November 2026), and keeps them longer only if its safety systems flag a chat or the law requires it: <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">how long Anthropic keeps data</a>.</p>
+<h2>What our server keeps</h2>
+<p>To keep the coach from being misused, the server limits questions per install and per day. For that the app sends a random key made on this phone for this install, which Apple’s App Attest service confirms comes from a real copy of Bodyclimb. The key is not your name, your Apple Account or the phone’s serial number, and a new one is made if you install the app again. Under that key the server keeps the key’s public part, how many times the key was used, how many questions were asked on the last days the coach was used and the time of the last one. We have not set an end date for these records yet: they stay until we delete them or close the coach service. For each request our server also writes one short line, with no question, summary or answer in it, such as whether it worked and whether the install has paid. Cloudflare, which runs our server, sees the IP address a request comes from and keeps these lines, with its own technical records of requests, for a few days. Anthropic receives neither the key nor your IP address.</p>
+<h2>When the coach cannot be reached</h2>
+<p>If our server cannot answer a “Change my plan” phrase such as “only 10 minutes today”, the phrase is read on this iPhone instead: by the app itself and, on phones that have Apple Intelligence, sometimes by Apple’s own model. That happens on the phone, and nothing is sent.</p>
 <h2>Backups</h2>
 <p>Your workouts are part of your phone’s own backup (iCloud or a computer), if you use one. Apple keeps that backup under your Apple Account; Bodyclimb cannot read it.</p>
 <h2>Purchases</h2>
-<p>Packs and Bodyclimb Full are bought through the App Store. Apple handles the payment; Bodyclimb never sees your payment details, only that a purchase is yours.</p>
+<p>Packs and Bodyclimb Full are bought through the App Store. Apple handles the payment; Bodyclimb never sees your payment details, only that a purchase is yours. If you use the coach chat, the app may send our server the App Store’s signed proof of your current purchases, so that the server can set your daily limit. The proof says what was bought, when, in which country’s store and at what price, and carries Apple’s transaction numbers; it holds no name and no payment details. The server checks Apple’s signature, uses it only to tell whether you have paid, and does not store or log the proof itself.</p>
 <h2>Reminders</h2>
 <p>Workout reminders are set on the phone itself. Nothing goes through a server.</p>
 <h2>Crash reports</h2>
 <p>If you turned on “Share with App Developers” in the iPhone’s settings, Apple may pass crash reports to us. They hold no workouts and no answers.</p>
 <h2>Deleting your data</h2>
-<p>Deleting the app deletes everything it kept on this phone. A phone backup made before keeps its copy of your workouts until that backup is replaced or deleted.</p>
+<p>Deleting the app deletes everything it kept on this phone, including the coach chat’s key. A phone backup made before keeps its copy of your workouts until that backup is replaced or deleted. The coach chat sends something only when you send it a question. To stop it, choose “Turn the coach off” in its menu: after that nothing more is sent. Our server holds no questions and no answers, and what Anthropic received is deleted as described above. The server’s counts carry no name, and we have no way to tell which install is yours, so we cannot look yours up. For anything else, write to us.</p>
 <h2>Age</h2>
 <p>Bodyclimb is for ages 16 and up. A younger person can’t train in the app. Where the law asks for it, the app also asks your Apple Account for your age range and keeps only the band — under 16, 16–17 or 18 and over — on this phone.</p>
 <h2>If this changes</h2>
-<p>If Bodyclimb ever sends anything — for example anonymous statistics to improve the plans — the app will ask you first, and this policy will say exactly what is sent.</p>
+<p>If Bodyclimb ever sends anything else — for example anonymous statistics to improve the plans — the app will ask you first, and this policy will say exactly what is sent.</p>
 <h2>Contact</h2>
 <p>Bodyclimb is made by Dmytro Nour. Questions about this policy or your data: <a href="mailto:support@bodyclimb.app">support@bodyclimb.app</a>.</p>
-<p class="updated">Last updated 22 October 2026</p>
+<p class="updated">Last updated 18 November 2026</p>
 <nav><a href="/support">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a></nav>
 </main>
 </body>
