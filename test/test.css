@@ -1,1 +1,114 @@
-/* replaced by the upload that follows */
+/* Bodyclimb web tests (decision 200): one screen, a big self-timed clock, a result at once.
+   Tokens, fonts, nav and the App Store badge come from /landing.css; this file only adds the test screen. */
+
+.t { min-height: 100svh; display: flex; align-items: center; padding: calc(var(--nav-h) + 14px) 0 calc(40px + env(safe-area-inset-bottom));
+     background: linear-gradient(180deg, var(--night) 0%, var(--night-2) 55%, var(--dusk) 100%); color: var(--dink); }
+.t-in { max-width: 620px; }
+.t [hidden] { display: none !important; }
+.t-sr { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.t .kicker { font: 800 .95rem/1.2 var(--display); letter-spacing: .06em; text-transform: uppercase; color: var(--ember); margin-bottom: 8px; }
+.t h1 { font-size: clamp(2.2rem, 1.5rem + 3.4vw, 3.6rem); margin-bottom: 12px; }
+.t-how { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; counter-reset: how; font-size: 1rem; line-height: 1.42; color: var(--dink-2); }
+.t-how li { position: relative; padding-left: 30px; counter-increment: how; }
+.t-how li::before { content: counter(how); position: absolute; left: 0; top: .08em; width: 21px; height: 21px; border-radius: 50%;
+                    font: 900 .8rem/21px var(--display); text-align: center; background: var(--dusk-2); color: var(--dink); }
+.t-how b { color: var(--dink); font-weight: 700; }
+
+/* ---------- The timer ---------- */
+.t-card { margin-top: 16px; padding: 14px 18px 18px; border-radius: 28px; text-align: center;
+          background: rgba(26, 21, 34, .6); border: 1px solid rgba(255, 255, 255, .08); box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .6); }
+.t-phase { font: 800 1rem/1.3 var(--display); color: var(--dink-2); min-height: 1.3em; }
+.t-clock { font: 900 clamp(4rem, 21vw, 7rem)/1 var(--display); letter-spacing: -0.03em; font-variant-numeric: tabular-nums lining-nums;
+           margin: 4px 0 8px; color: var(--dink); white-space: nowrap; }
+.t-lead { border: 0; margin: 0 0 12px; padding: 0; min-width: 0; }
+.t-lead legend { padding: 0; margin: 0 auto 6px; font-size: .92rem; color: var(--dink-2); }
+.t-seg { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; background: rgba(255, 255, 255, .07); }
+.t-seg label { position: relative; display: block; }
+.t-seg input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.t-seg span { display: block; min-width: 68px; padding: 11px 14px; border-radius: 999px; font: 800 1rem/1.4 var(--display); color: var(--dink-2); }
+.t-seg input:checked + span { background: var(--dink); color: var(--night-2); }
+.t-seg input:focus-visible + span { outline: 3px solid var(--ember); outline-offset: 2px; }
+
+.t-go { display: block; width: 100%; min-height: 72px; padding: 14px 18px; border: 0; border-radius: 22px; cursor: pointer;
+        font: 900 clamp(1.1rem, 5.4vw, 1.3rem)/1.2 var(--display); text-wrap: balance; background: var(--accent); color: #fff; transition: background .2s, transform .3s var(--ease-out);
+        -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+.t-go:hover { background: #E2532A; }
+.t-go:active { transform: scale(.985); }
+.t-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 16px; margin-top: 10px; }
+.t-link { background: none; border: 0; padding: 12px 2px; min-height: 44px; font: 700 1rem var(--text); color: var(--dink); cursor: pointer;
+          text-decoration: underline; text-underline-offset: .2em; }
+.t-sound { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font: 600 1rem var(--text); color: var(--dink-2); cursor: pointer; }
+.t-sound input { appearance: none; -webkit-appearance: none; position: relative; width: 46px; height: 28px; margin: 0; border-radius: 999px;
+                 background: var(--dusk-2); border: 1px solid rgba(255, 255, 255, .16); cursor: pointer; transition: background .2s; }
+.t-sound input::after { content: ""; position: absolute; left: 3px; top: 3px; width: 20px; height: 20px; border-radius: 50%; background: var(--dink-2);
+                        transition: transform .25s var(--ease-out), background .2s; }
+.t-sound input:checked { background: var(--forest); }
+.t-sound input:checked::after { transform: translateX(18px); background: #fff; }
+
+.t-manual { margin-top: 8px; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, .1); text-align: left; }
+.t-manual label { display: block; font: 800 1.05rem/1.3 var(--display); margin-bottom: 8px; }
+.t-manual-row { display: flex; gap: 10px; }
+.t-manual input { flex: 1 1 0; min-width: 0; height: 56px; padding: 0 16px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, .22);
+                  background: var(--night); color: var(--dink); font: 900 1.5rem var(--display); font-variant-numeric: tabular-nums; }
+.t-manual button { flex: none; height: 56px; padding: 0 20px; border: 0; border-radius: 16px; background: var(--dink); color: var(--night-2);
+                   font: 900 1.05rem var(--display); cursor: pointer; }
+.t-hint { margin-top: 8px; font-size: .92rem; color: var(--dink-2); }
+.t-note { margin-top: 12px; font-size: .98rem; color: var(--sky-high); }
+.t-note:empty { display: none; }
+.t-safe { margin-top: 16px; font: 800 1.05rem/1.3 var(--display); color: var(--dink); }
+.t-small { margin-top: 18px; font-size: .92rem; line-height: 1.5; color: var(--dink-2); }
+.t-small a { color: inherit; font-weight: 700; }
+
+/* Countdown and hold: nothing on screen but the digits and one button, readable from across the room. */
+.t[data-state="lead"] .t-intro, .t[data-state="run"] .t-intro,
+.t[data-state="lead"] .t-setup, .t[data-state="run"] .t-setup,
+.t[data-state="lead"] .t-small, .t[data-state="run"] .t-small { display: none; }
+.t[data-state="lead"] .t-card, .t[data-state="run"] .t-card { margin-top: 0; padding-top: 26px; }
+.t[data-state="lead"] .t-phase, .t[data-state="run"] .t-phase { font-size: 1.35rem; color: var(--sky-high); }
+.t[data-state="lead"] .t-clock, .t[data-state="run"] .t-clock { font-size: clamp(7rem, 40vw, 15rem); margin: 10px 0 22px; }
+.t[data-state="lead"] .t-clock { color: var(--gold-lit); }
+.t[data-state="lead"] .t-go { background: transparent; color: var(--dink); box-shadow: inset 0 0 0 2px rgba(248, 241, 233, .5); }
+.t[data-state="run"] .t-go { min-height: 104px; font-size: 1.9rem; background: var(--dink); color: var(--night-2); }
+
+/* ---------- The result ---------- */
+.t[data-state="result"] .t-how, .t[data-state="result"] .t-card { display: none; }
+.t-result { margin-top: 4px; }
+.t-result:focus { outline: none; }
+.t-result.is-new { animation: tin .5s var(--ease-out); }
+@keyframes tin { from { opacity: .001; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.t-num { display: flex; align-items: baseline; gap: 14px; font: 900 clamp(5.5rem, 30vw, 10rem)/.95 var(--display); letter-spacing: -0.035em;
+         font-variant-numeric: tabular-nums lining-nums; color: var(--dink); }
+.t-num small { font: 800 clamp(1.3rem, 5vw, 1.9rem)/1 var(--display); letter-spacing: 0; color: var(--dink-2); }
+.t-line { margin-top: 14px; font: 800 clamp(1.4rem, 1.1rem + 1.4vw, 1.9rem)/1.2 var(--display); letter-spacing: -0.01em; color: var(--sky-high); }
+.t-next { margin-top: 10px; font-size: 1.08rem; color: var(--dink); max-width: 44ch; }
+.t-cap { margin-top: 8px; font-size: .95rem; color: var(--dink-2); }
+.t-actions { display: grid; gap: 14px; margin-top: 26px; justify-items: start; }
+.t-open { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 64px; padding: 12px 18px; border-radius: 20px;
+          background: var(--accent); color: #fff; text-decoration: none; font: 900 1.25rem/1.2 var(--display); transition: background .2s; }
+.t-open:hover { background: #E2532A; }
+.t-pair { display: flex; flex-wrap: wrap; gap: 10px; width: 100%; }
+.t-pair button { flex: 1 1 130px; min-height: 52px; padding: 10px 16px; border-radius: 16px; cursor: pointer; background: transparent; color: var(--dink);
+                 border: 0; box-shadow: inset 0 0 0 2px rgba(248, 241, 233, .32); font: 800 1.05rem/1.2 var(--display); transition: box-shadow .2s; }
+.t-pair button:hover { box-shadow: inset 0 0 0 2px var(--dink); }
+.t-again { margin-top: 18px; font-size: .98rem; color: var(--dink-2); max-width: 46ch; }
+.t-shot { margin: 18px 0 0; }
+.t-shot img { width: min(280px, 100%); border-radius: 18px; box-shadow: 0 24px 48px -24px rgba(0, 0, 0, .7); }
+.t-shot a { display: inline-block; margin-top: 12px; font-weight: 700; color: var(--dink); }
+.t-shot figcaption { margin-top: 6px; font-size: .92rem; color: var(--dink-2); }
+
+@media (max-width: 360px) {
+  .nav { gap: 12px; }
+  .nav .nav-cta { white-space: nowrap; padding: 10px 14px; }
+  .t-card { padding: 16px 14px 18px; border-radius: 24px; }
+  .t-seg span { min-width: 60px; padding: 11px 10px; }
+  .t-manual button { padding: 0 14px; }
+}
+/* A phone's visible height: the idle clock steps back so Start is on the first screen. */
+@media (max-height: 720px) {
+  .t[data-state="idle"] .t-clock { font-size: 3.2rem; }
+}
+@media (max-height: 520px) and (orientation: landscape) {
+  .t[data-state="lead"] .t-clock, .t[data-state="run"] .t-clock { font-size: clamp(5rem, 38vh, 12rem); margin: 4px 0 12px; }
+  .t[data-state="run"] .t-go { min-height: 72px; }
+}

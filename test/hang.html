@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dead Hang Test: Time Your Hang | Bodyclimb</title>
+<meta name="description" content="A dead hang timer in your browser. Tap Start, hang on straight arms, stop when your form breaks. Your seconds at once: no sign-up, no age charts.">
+<meta name="apple-itunes-app" content="app-id=6825797176, app-argument=https://bodyclimb.app/test/hang">
+<meta name="theme-color" content="#16121D">
+<link rel="canonical" href="https://bodyclimb.app/test/hang">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bodyclimb.app/test/hang">
+<meta property="og:title" content="Dead Hang Test | Bodyclimb">
+<meta property="og:description" content="Time your dead hang and see where your climb starts. Self-timed, no sign-up.">
+<meta property="og:image" content="https://bodyclimb.app/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="preload" href="/nunito.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/landing.css">
+<link rel="stylesheet" href="/test/test.css">
+</head>
+<body>
+<header class="nav" style="background:var(--night-2);color:var(--dink)">
+  <a class="brand" href="/" aria-label="Bodyclimb home"><img src="/icon.png" alt="" width="34" height="34"><span>Bodyclimb</span></a>
+  <a class="nav-cta" href="https://apps.apple.com/app/apple-store/id6825797176?pt=128315061&amp;ct=test-hang&amp;mt=8" style="margin-left:auto">Get the app</a>
+</header>
+<main class="t" id="test" data-state="idle" data-test="hang" data-name="Dead Hang Test" data-lead="10"
+      data-lead-label="to get on the bar" data-lead-phase="Get on the bar" data-run-phase="Hang"
+      data-idle="Nothing starts until you tap Start." data-ask="How long did you hang?"
+      data-line="That’s where your climb starts.">
+<div class="wrap t-in">
+<div class="t-intro">
+<p class="kicker">Self-timed test</p>
+<h1>Dead Hang Test</h1>
+<ol class="t-how">
+<li><b>Set up.</b> A solid bar, and a box or chair so you can reach it without jumping.</li>
+<li><b>Hang.</b> Tap Start and take a full grip. When the countdown ends, step off and hang on straight arms.</li>
+<li><b>Stop when your form breaks:</b> your fingers start to open, or you can’t stay still. Step back onto the box, then tap Stop.</li>
+</ol>
+</div>
+<noscript><p class="t-note">This timer needs JavaScript turned on.</p></noscript>
+
+<section class="t-card" aria-label="Timer">
+<p class="t-phase" id="t-phase">Nothing starts until you tap Start.</p>
+<div class="t-clock" id="t-clock" role="timer" aria-live="off" aria-label="0 seconds">0:00</div>
+<div class="t-setup">
+<fieldset class="t-lead">
+<legend>Countdown before the hold</legend>
+<div class="t-seg">
+<label><input type="radio" name="lead" value="3"><span>3 s</span></label>
+<label><input type="radio" name="lead" value="5"><span>5 s</span></label>
+<label><input type="radio" name="lead" value="10" checked><span>10 s</span></label>
+</div>
+</fieldset>
+</div>
+<button class="t-go" id="t-go" type="button">Start · 10 s to get on the bar</button>
+<p class="t-hint" id="t-awake" hidden>Keep the screen on. If it locks, the timer stops and asks for your time.</p>
+<div class="t-setup">
+<div class="t-tools">
+<button class="t-link" id="t-manual-open" type="button" aria-expanded="false" aria-controls="t-manual">I timed it myself</button>
+<label class="t-sound"><input type="checkbox" id="t-sound" checked> Sound</label>
+</div>
+<form class="t-manual" id="t-manual" novalidate hidden>
+<label for="t-seconds" id="t-manual-ask">How long did you hang?</label>
+<div class="t-manual-row">
+<input id="t-seconds" name="seconds" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" aria-describedby="t-manual-hint t-manual-error">
+<button type="submit">Show result</button>
+</div>
+<p class="t-hint" id="t-manual-hint">In whole seconds. Up to 600 s: that is all this test needs.</p>
+<p class="t-note" id="t-manual-error" role="alert"></p>
+</form>
+</div>
+<p class="t-note" id="t-note"></p>
+<p class="t-safe">Stop if anything hurts.</p>
+</section>
+
+<section class="t-result" id="t-result" tabindex="-1" aria-labelledby="t-line" hidden>
+<p class="t-num" aria-hidden="true"><span id="t-num">0</span><small id="t-unit">seconds</small></p>
+<h2 class="t-line" id="t-line"></h2>
+<p class="t-cap" id="t-cap" hidden>The timer stops at 10 minutes.</p>
+<p class="t-next">If the app asks “How long can you hang from a bar?” while it finds your start for Back, Arms or Core, this is your answer.</p>
+<div class="t-actions">
+<a class="badge" href="https://apps.apple.com/app/apple-store/id6825797176?pt=128315061&amp;ct=test-hang&amp;mt=8"><img src="/appstore-badge.svg" alt="Download on the App Store" width="180" height="60"></a>
+<div class="t-pair">
+<button id="t-share" type="button">Share result</button>
+<button id="t-again" type="button">Try again</button>
+</div>
+</div>
+<figure class="t-shot" id="t-shot" hidden>
+<img alt="" width="1080" height="1350">
+<a href="#t-shot">Save the image</a>
+<figcaption>Or press and hold the image to save it.</figcaption>
+</figure>
+</section>
+
+<p class="t-small">No sign-up · No cookies, no analytics · <a href="/dead-hang-guide">How the test works</a> · <a href="/">About Bodyclimb</a><br>General training information, not medical advice.</p>
+<p class="t-sr" id="t-live" role="status" aria-live="polite"></p>
+</div>
+</main>
+<script src="/test/test.js" defer></script>
+</body>
+</html>
