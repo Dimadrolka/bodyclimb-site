@@ -178,5 +178,189 @@
    "tier": "High Ridges",
    "clip": "ava_pull_up"
   }
+ },
+ "ladder": [
+  {
+   "id": "PU-01",
+   "name": "Wall push-ups",
+   "standard": "3 \u00d7 20",
+   "altitude": 80,
+   "tier": "Foothills",
+   "clip": "ava_wall_pushup"
+  },
+  {
+   "id": "VP-01",
+   "name": "Feet-supported hang",
+   "standard": "3 \u00d7 30 s, feet barely touching",
+   "altitude": 210,
+   "tier": "Foothills",
+   "clip": "leo_feet_supported_hang"
+  },
+  {
+   "id": "PU-06",
+   "name": "First push-up",
+   "standard": "1 rep to standard; then 3 \u00d7 5",
+   "altitude": 1480,
+   "tier": "Highlands",
+   "clip": "ava_pushup"
+  },
+  {
+   "id": "VP-10",
+   "name": "First pull-up",
+   "standard": "1 strict rep on 2 different days",
+   "altitude": 2770,
+   "tier": "Highlands",
+   "clip": "leo_pull_up"
+  },
+  {
+   "id": "SQ-12",
+   "name": "Pistol squat",
+   "standard": "3 \u00d7 5 per leg (pistol or shrimp)",
+   "altitude": 4150,
+   "tier": "High Ridges",
+   "clip": "ava_pistol_squat"
+  },
+  {
+   "id": "MU-06",
+   "name": "First muscle-up",
+   "standard": "1 strict rep; then 3 \u00d7 3",
+   "altitude": 5720,
+   "tier": "High Ridges",
+   "clip": "leo_muscle_up"
+  },
+  {
+   "id": "VP-19",
+   "name": "One-arm pull-up",
+   "standard": "1 strict rep per side",
+   "altitude": 6540,
+   "tier": "The Heights",
+   "clip": "ava_one_arm_pullup"
+  }
+ ],
+ "voice": {
+  "leo": [
+   [
+    0.4,
+    0.95,
+    "Next up."
+   ],
+   [
+    1.1,
+    3.28,
+    "Horizontal bent-knee row."
+   ],
+   [
+    3.98,
+    6.11,
+    "Squeeze one second at the top."
+   ],
+   [
+    7.11,
+    7.62,
+    "One."
+   ],
+   [
+    8.07,
+    8.79,
+    "Two."
+   ],
+   [
+    9.24,
+    10.0,
+    "Three."
+   ],
+   [
+    10.9,
+    11.75,
+    "Seven!"
+   ],
+   [
+    12.2,
+    12.8,
+    "Eight!"
+   ],
+   [
+    13.7,
+    14.34,
+    "Rest."
+   ],
+   [
+    14.54,
+    16.07,
+    "One minute fifteen."
+   ],
+   [
+    16.97,
+    18.16,
+    "Shake out your arms."
+   ],
+   [
+    19.26,
+    21.39,
+    "Rest is over. Ready when you are."
+   ]
+  ],
+  "ava": [
+   [
+    0.4,
+    1.34,
+    "Next up."
+   ],
+   [
+    1.49,
+    3.49,
+    "Horizontal bent-knee row."
+   ],
+   [
+    4.19,
+    6.06,
+    "Squeeze one second at the top."
+   ],
+   [
+    7.06,
+    7.66,
+    "One."
+   ],
+   [
+    8.11,
+    8.57,
+    "Two."
+   ],
+   [
+    9.02,
+    9.58,
+    "Three."
+   ],
+   [
+    10.48,
+    11.33,
+    "Seven!"
+   ],
+   [
+    11.78,
+    12.37,
+    "Eight!"
+   ],
+   [
+    13.27,
+    14.25,
+    "Rest."
+   ],
+   [
+    14.45,
+    15.81,
+    "One minute fifteen."
+   ],
+   [
+    16.71,
+    18.2,
+    "Shake out your arms."
+   ],
+   [
+    19.3,
+    21.43,
+    "Rest is over. Ready when you are."
+   ]
+  ]
  }
 }

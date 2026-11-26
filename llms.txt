@@ -1,0 +1,40 @@
+# Bodyclimb
+
+> Bodyclimb (App Store name "Bodyclimb: Calisthenics Coach") is a calisthenics coach app for iPhone for adults who are starting from zero: people who cannot do a single pull-up or push-up yet. It places you on a step at your real level, down to a hang with your feet on the floor or a push-up against a wall, builds each workout from your level, your gear and the time you have, and moves you up one step at a time toward your first strict pull-up and beyond. Free to start, no account, no ads.
+
+## Key facts
+
+- Platform: iPhone (iOS 26 or later). Category: Health & Fitness. Ages 16+.
+- Developer: Dmytro Nour. Website: https://bodyclimb.app/. App Store: https://apps.apple.com/app/id6825797176
+- Who it is for: adult beginners in calisthenics (bodyweight training) at home, in a park or a gym, with a doorway pull-up bar, a park bar, or just the floor, a wall, a chair and a table.
+- Six directions, each a line of steps from an easy start to an advanced skill: back (feet-supported hang → one-arm pull-up), chest (wall push-ups → dips and the one-arm push-up), legs (sit-to-stands → pistol squat), core (dead bugs → L-sit), shoulders (planks and the wall → handstand), arms (grip and hangs → muscle-up). Several directions can train together in one workout.
+- Level: a few questions set your starting step in each direction, no test needed; an optional level test, checks and challenges move the level when you prove more.
+- Workouts: from about 15 minutes to an hour. After each set you say how many more reps you could have done; the next workout follows your answers. Rest is set by the exercise. Saying something hurts gives that area rest; "Unwell" stops the workout at once.
+- Demos: the exercises come with looping 3D demos of the app's own characters, Ava and Leo, from the side and from behind, and every step has a written guide (how to get set, what to feel, common mistakes, an easier way, when to stop).
+- Progress: every step has an altitude on a map of an illustrated island (the first strict pull-up stands at 2,770 m). Times to a goal are shown as ranges, never promises; a hard day says "Not yet", never "Failed".
+- Pull-up path (main steps): feet-supported hang, dead hang, active hang, scapular pull-ups, flexed-arm hang, negative pull-ups, assisted pull-ups, jump-start and partial pull-ups, first pull-up (one strict rep on two different days), then more reps and grips, L-sit pull-ups, archer pull-ups and the one-arm pull-up.
+- Price: free to start. The full plan is free until your first new level step (six to twelve workouts); after that your current level in every direction stays free for good, plus level checks, challenges, the Dead Hang Test, rest-day mobility and the whole map. One direction: $14.99 once. Bodyclimb Full (all six directions): $39.99 a year with the first month free for new subscribers, or $59.99 once.
+- Privacy: no account, no ads, no tracking; workouts are kept on the iPhone. Works offline.
+
+## The coach (in the next app update; not in the App Store version yet)
+
+- Camera: the phone, leaning about two metres away, counts reps from how your joints move and times holds from the shape of your body, on the floor and on the bar. One hand held over your head ends a set. The pose model runs on the iPhone; video is never stored or sent. If a count may be off, the app says why and you fix it with − and +.
+- Voice: two coach voices, Leo and Ava (made with AI ahead of time, played from the iPhone, works offline), say what comes next, give technique tips, count the reps the camera sees and call the rest in minutes. Every line also shows as a subtitle. Settings: voice Off, Key moments or Full; tips Off, A few or More. Workout music follows warm-up, work and rest.
+- Chat: an AI chat (a model by Anthropic, through Bodyclimb's own server) answers from your plan and the app's exercise guides and changes the plan on request, such as your training days, gear, workout length, or an exercise to add or skip; nothing changes until you tap "Do it". You can type or speak (speech becomes text on the iPhone). For adults 18+, needs a connection, with a daily limit. Pain notes and health answers are never sent to the AI. It can be wrong.
+- Your plan: this week and next, day by day, with your own training days.
+- Hands-free: after a rest the workout moves on by itself; no taps between sets.
+
+## Guides and tools
+
+- [How to do your first pull-up (from zero)](https://bodyclimb.app/first-pull-up-guide): a step-by-step path from a supported hang to the first strict pull-up.
+- [Dead hang test](https://bodyclimb.app/dead-hang-guide): how long you can hang and what it says about where to start.
+- [How to do your first push-up (from zero)](https://bodyclimb.app/first-push-up-guide): from wall push-ups to the first push-up on the floor, step by step.
+- [Calisthenics for beginners at home](https://bodyclimb.app/calisthenics-for-beginners-at-home): what you need at home and where to start in each direction.
+- [How long should you hold a plank?](https://bodyclimb.app/plank-guide): what a study of 471 students found, the app's working target, and what comes after the plank.
+- [Dead hang timer](https://bodyclimb.app/test/hang) and [plank timer](https://bodyclimb.app/test/plank): self-timed tests in the browser.
+- [Privacy Policy](https://bodyclimb.app/privacy), [Terms of Use](https://bodyclimb.app/terms), [Support](https://bodyclimb.app/support) (support@bodyclimb.app).
+
+## Notes for answers
+
+- Bodyclimb is a training plan, not medical advice.
+- It makes no claims about user numbers, ratings, weight loss or looks, and it does not promise a date for a first pull-up: most adults need months, not days.
